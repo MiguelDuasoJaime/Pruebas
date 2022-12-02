@@ -1,0 +1,13 @@
+def program():
+    nums=[]
+    for x in range(0,10):
+        nums.append(float(input("Enter a number: ")))
+    for x in nums:
+        e=0
+        for y in nums:
+            if x > y:
+                e=1
+        if e == 0:
+            res=x
+    print("The lowest number is: " +str(res))
+program()
