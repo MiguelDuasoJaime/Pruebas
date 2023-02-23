@@ -3,13 +3,13 @@
 #include<stdlib.h>
 
 using namespace std;
-int cuenta_letras(char *pnom){
-    int cont=0;
+int cuenta_letras(char *puntn){
+    int c=0;
     int fil;
-    while(*(pnom+cont)!='\0'){
-        cont++;    
+    while(*(puntn+c)!='\0'){
+        c++;    
     }
-    return cont;
+    return c;
 }
     
 int main(){
@@ -27,14 +27,14 @@ int main(){
 		cout<<"Cadena trasladada: "<<palabra[cnt]<<endl;
 		cout<<"La longitud es: "<<len<<endl<<endl;
 	}
-	int ask;
+	int pr;
 	cout<<"Que palabra quieres obtener? (del 1 al 4): ";
-	cin>>ask;
-	int pos;
-	cout<<palabra[ask-1]<<endl;
+	cin>>pr;
+	int p2;
+	cout<<palabra[pr-1]<<endl;
 	cout<<"Que letra quieres obtner?: ";
-	cin>>pos;
-	cout<<*(*(palabra+ask-1)+pos-1);
+	cin>>p2;
+	cout<<*(*(palabra+pr-1)+p2-1);
 	
 	return 0;
 }
