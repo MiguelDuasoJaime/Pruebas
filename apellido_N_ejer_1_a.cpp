@@ -16,7 +16,6 @@ int main(){
 	int 4;
     	char *palabra[4];
 	char n1[10];
-	int chck=0;
 	for (int cnt=0;cnt<4;cnt++){
 		cout<<"Introduce la palbra "<<cnt+1<<": ";
 		cin>>n1;
@@ -29,14 +28,8 @@ int main(){
 		cout<<"La longitud es: "<<len<<endl<<endl;
 	}
 	int ask;
-	while (chck==0){
-		cout<<"Que palabra quieres obtener? (del 1 al 4): ";
-		cin>>ask;
-		if (ask<1 || ask>4){
-			cout<<"-Posicion no valida"<<endl;
-		}
-		else chck=1;
-	}
+	cout<<"Que palabra quieres obtener? (del 1 al 4): ";
+	cin>>ask;
 	int pos;
 	cout<<palabra[ask-1]<<endl;
 	cout<<"Que letra quieres obtner?: ";
