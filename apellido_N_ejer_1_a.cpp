@@ -13,11 +13,11 @@ int cuenta_letras(char *pnom){
 }
     
 int main(){
-	int i=4;
-    char *palabra[i];
+	int 4;
+    	char *palabra[4];
 	char n1[10];
 	int chck=0;
-	for (int cnt=0;cnt<i;cnt++){
+	for (int cnt=0;cnt<4;cnt++){
 		cout<<"Introduce la palbra "<<cnt+1<<": ";
 		cin>>n1;
 		int len=cuenta_letras(n1);
